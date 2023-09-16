@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homework Page</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+
+    <!-- Firebase App (the core Firebase SDK) is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/8.3.2/firebase-app.js"></script>
+    <!-- Add Firebase products that you want to use -->
+    <script src="https://www.gstatic.com/firebasejs/8.3.2/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.3.2/firebase-firestore.js"></script>
+</head>
+<body>
+
+    
+
+    <div id="app" style="display: none;"> <!-- Initially hidden -->
+        <div id="messages">
+            <!-- Messages will be dynamically inserted here -->
+        </div>
+        
+        <div id="inputArea">
+            <form id="homeworkForm">
+                <textarea id="messageText" placeholder="Enter your homework"></textarea>
+                <div class="fab" id="mainFab">
+                    <i>+</i>
+                    <div class="fabOptions" id="fabOptions">
+                        <a href="../index.html" class="fabLink">Scheduler</a>
+                        <a href="hw.html" class="fabLink">Homework</a>
+                        <a href="../Quotes/quotes.html" class="fabLink">Quote of the Day</a>
+                        <!-- Add more links as needed -->
+                    </div>
+                </div>
+                <button id="submitBtn" type="submit">Send</button>
+            </form>
+
+        </div>
+        
+    </div>
+
+    
+
+    
+    
+    <div class="theme-toggle">
+        <input type="checkbox" id="darkModeToggle">
+        <label for="darkModeToggle" class="slider"></label>
+    </div>
+
+    <div id="loginArea">
+        <button id="authBtn" onclick="toggleSignIn()">Sign in with Google</button>
+    </div>
+    
+
+    <script src="script.js"></script>
+    <script src="theme.js"></script> <!-- If using a separate theme JS file -->
+    <script src="fab.js"></script> <!-- If using a separate FAB JS file -->    
+    <script src="button.js"></script> <!-- If using a separate FAB JS file -->    
+
+</body>
+</html>

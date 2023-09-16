@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My School Schedule</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+</head>
+<body>
+
+    <div class="fab" id="mainFab">
+        <i>+</i>
+        <div class="fabOptions" id="fabOptions">
+            <a href="index.html" class="fabLink">Scheduler</a>
+            <a href="../hw/hw.html" class="fabLink">Homework</a>
+            <a href="Quotes/quotes.html" class="fabLink">Quote of the Day</a>
+            <!-- Add more links as needed -->
+        </div>
+    </div>
+
+
+    <div id="app">
+        <h1>Current Period:</h1>
+        <p id="currentPeriod">Loading...</p>
+
+        <h1>Time Left:</h1>
+        <p id="timeLeft">Loading...</p>
+
+        <h1>Upcoming:</h1>
+        <p id="upcoming">Loading...</p>
+    </div>
+
+    <div class="theme-toggle">
+        <input type="checkbox" id="darkModeToggle">
+        <label for="darkModeToggle" class="slider"></label>
+    </div>
+    
+
+    <script src="script.js" ></script>
+    <script src="theme.js" ></script>
+    <script src="fab.js" ></script>
+    
+</body>
+</html>

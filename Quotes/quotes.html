@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quote of the Day</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+</head>
+<body>
+    <div id="quoteContainer">
+        <h2>Quote of the Day</h2>
+        <blockquote id="dailyQuote"></blockquote>
+        <cite id="quoteAuthor"></cite>
+    </div>
+
+    <div class="fab" id="mainFab">
+        <i>+</i>
+        <div class="fabOptions" id="fabOptions">
+            <a href="../index.html" class="fabLink">Scheduler</a>
+            <a href="../hw/hw.html" class="fabLink">Homework</a>
+            <a href="quotes.html" class="fabLink">Quote of the Day</a>
+            <!-- Add more links as needed -->
+        </div>
+    </div>
+    
+
+    <div class="theme-toggle">
+        <input type="checkbox" id="darkModeToggle">
+        <label for="darkModeToggle" class="slider"></label>
+    </div>
+
+    <button id="getNewQuote" class="nextQuoteBtn" onclick="fetchQuote()">Another Quote</button>
+
+
+    
+
+    <script src="script.js"></script>
+    <script src="theme.js" ></script>
+    <script src="fab.js" ></script>
+</body>
+</html>
